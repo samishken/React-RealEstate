@@ -26,7 +26,7 @@ class App extends Component {
         this.setState({
           allFlats: data,
           flats: data,
-          selectedFlat: data[0]
+          selectedFlat: data[5]
         })
       })
   }
@@ -71,7 +71,7 @@ class App extends Component {
             <GoogleMapReact
               center={center}
               // getting map closer to center increase the below number in ZOOM
-              zoom={13}>
+              zoom={15}>
               {this.state.flats.map((flat) => { return <Marker 
                   key={flat.name} lat={flat.lat} 
                   lng={flat.lng} text={flat.price} 

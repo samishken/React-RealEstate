@@ -11,7 +11,8 @@ class Flat extends Component {
     const title = this.props.flat.price + '€' + ' - ' + this.props.flat.name
 
     return (
-      <div className='flat' onClick={this.props.handleClick}>
+      // when we click the flat we want action on the map
+      <div className='flat' onClick={this.props.handleClick}>   
           <div className='flat-picture' style={style}> </div>
           <div className='flat-title'>{title}</div>
       </div>)

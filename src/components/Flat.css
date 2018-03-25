@@ -3,19 +3,17 @@
     flex-basis: calc(50% - 20px);
     margin: 10px;
     cursor: pointer;
-}
-
-.flat:hover {
+  }
+  
+  .flat:hover {
     opacity: 0.9;
-}
-.flat-picture {
-    height: 200px;
+  }
+  
+  .flat-picture {
+    height: 180px;
     background-size: cover;
-    background-position: center;
-}
-
-.flat-title {
+  }
+  
+  .flat-title {
     margin-top: 10px;
-    font-weight: bold;
-
-}
+  }
