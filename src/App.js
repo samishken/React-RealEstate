@@ -25,7 +25,7 @@ class App extends Component {
       .then((data) => {
         this.setState({
           allFlats: data,
-          flats: data,
+          flats: data,                 //setState = flats = data we got from json file. (state changes)
           selectedFlat: data[5]
         })
       })
@@ -72,9 +72,9 @@ class App extends Component {
               center={center}
               // getting map closer to center increase the below number in ZOOM
               zoom={15}>
-              {this.state.flats.map((flat) => { return <Marker 
-                  key={flat.name} lat={flat.lat} 
-                  lng={flat.lng} text={flat.price} 
+              {this.state.flats.map((flat) => { return <Marker
+                  key={flat.name} lat={flat.lat}
+                  lng={flat.lng} text={flat.price}
                   selected={flat === this.state.selectedFlat}
                   />
                 })}
